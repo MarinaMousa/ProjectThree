@@ -1,0 +1,100 @@
+
+/* Start Contact */
+body {
+    background-color: #ebecf0;
+}
+.contact-us {
+    padding-top: 200px; 
+    padding-bottom: var(--padding-bottom);
+}
+.contact-us .card {
+    background-color: #ebecf0;
+    box-shadow: -6px -6px 10px white,
+                7px 7px 20px #3f415342;
+    height: 400px;
+    position: relative;
+    border-radius: 0;
+    margin-bottom: 30px;
+}
+.contact-us .card.one {
+    border: none;
+}
+.contact-us .card.two {
+    border: none;
+}
+.contact-us .card form {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contact-us .card form .main-input {
+    padding: 15px;
+    display: block;
+    border: none;
+    margin-bottom: 7px;
+    width: 100%;
+    background-color: #ebecf0;
+    -moz-box-shadow: 4px 4px 4px #4d5a6b3b inset,
+                -6px -6px 15px white inset;
+    -webkit-box-shadow: 4px 4px 4px #4d5a6b3b inset,
+                -6px -6px 15px white inset;
+    box-shadow: 4px 4px 4px #4d5a6b3b inset,
+                -6px -6px 15px white inset;
+}
+.contact-us .card form .main-input:focus {
+    outline: none;
+    border-color: var(--main-color);
+}
+.contact-us .card form textarea.main-input {
+    height: 110px;
+}
+.contact-us .card form input[type="submit"] {
+    background-color: var(--section-color);
+    color: white;
+    padding: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 12px;
+    transition: var(--transition);
+}
+.contact-us .card form input[type="submit"]:hover {
+    background-color: var(--main-color);
+    color: #000;
+}
+@media (max-width: 767px) {
+    .contact-us .card .info {
+        order: -1;
+        text-align: center;
+    }
+}
+.contact-us .card form input[type="text"]::placeholder {
+    transition: opacity var(--transition);
+}
+.contact-us .card form input[type="text"]:focus::placeholder {
+    opacity: 0;
+}
+.contact-us .card form input[type="email"]::placeholder {
+    transition: opacity var(--transition);
+}
+.contact-us .card form input[type="email"]:focus::placeholder {
+    opacity: 0;
+}
+.contact-us .card form textarea::placeholder {
+    transition: opacity var(--transition);
+}
+.contact-us .card form textarea:focus::placeholder {
+    opacity: 0;
+}
+.contact-us .card .info {
+    width: 100%;
+    height: 100%;
+}
+/* End Contact */

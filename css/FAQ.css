@@ -1,0 +1,27 @@
+
+/* Start FAQ */
+.faq {
+    padding-top: 200px; 
+    padding-bottom: var(--padding-bottom);
+}
+.card-header {
+    background-color: rgb(225 225 225);
+}
+.card-header .btn-block {
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--main-color);
+    border-style: none;
+    box-shadow: none;
+    background-color: white;
+    width: 100%;
+    text-align: left;
+}
+.card-body {
+    border-top: 2px solid var(--main-color);
+    line-height: 1.8;
+    color: #858585;
+    padding: 25px 50px;
+}
+/* End FAQ */

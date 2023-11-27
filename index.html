@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Care</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Start Header -->
+    <div class="header" id="header">
+        <div class="container">
+            <a href="about.html" class="logo"><i class="fa-solid fa-baby"></i> Baby Care</a>
+            <div class="dropdown app">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Schedule Now
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="form1.html">New Patient</a></li>
+                  <li><a class="dropdown-item" href="form2.html">Returning Patient</a></li>
+                </ul>
+            </div>
+            <div class="dropdown lang">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Eng
+                </button>
+                <ul class="dropdown-menu list">
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                    <li><a class="dropdown-item" href="#">Spanish</a></li>
+                    <li><a class="dropdown-item" href="#">Arabic</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="container">
+            <ul class="main-nav">
+                <li><a href="index.html">Home <span></span></a></li>
+                <li><a href="about.html">About<span></span></a></li>
+                <li><a href="tech.html">Technology<span></span></a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services
+                        <span></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="service1.html">Service One</a></li>
+                        <li><a class="dropdown-item" href="service2.html">Service Two</a></li>
+                        <li><a class="dropdown-item" href="service3.html">Service Three</a></li>
+                        <li><a class="dropdown-item" href="service4.html">Service Four</a></li>
+                    </ul>
+                </li>
+                <li><a href="FAQ.html">FAQ<span></span></a></li>
+                <li><a href="contact.html">Contact<span></span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-dark">
+        <div class="container-fluid cont">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><i class="fa-solid fa-baby"></i> Baby Care</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="tech.html">Technology</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Services
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="service1.html">Service One</a></li>
+                    <hr class="dropdown-divider">
+                    <li><a class="dropdown-item" href="service2.html">Service Two</a></li>
+                      <hr class="dropdown-divider">
+                    <li><a class="dropdown-item" href="service3.html">Service Three</a></li>
+                      <hr class="dropdown-divider">
+                    <li><a class="dropdown-item" href="service4.html">Service Four</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="FAQ.html">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+<!-- End Header -->
+<!-- Start Landing -->
+<div onclick="generate();" class="landing">
+    <div class="container">
+        <!-- <button onclick="generate();">Health</button> -->
+        <!-- <button onclick="circle(); generate();" class="circleBtn">Circle | Square</button> -->
+
+        <div class="front">
+            <div class="info hidden">
+                <h2>The Most Important Thing Is Your Baby's Health</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo explicabo quod eos quos. Animi laudantium enim consequuntur minima adipisci molestias.</p>
+            </div>
+            <div class="image hidden">
+                <img src="images/111.jpeg" alt="">
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- End Landing -->
+
+<!-- Start About -->
+<div class="about">
+    <div class="container">
+        <div class="info">
+            <h1 class="hidden">Welcome To Baby Care</h1>
+            <p class="hidden">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Nam quibusdam accusamus sed eius sapiente doloremque fuga 
+                dolore ut maxime exercitationem. Illum, sunt aperiam dolore 
+                architecto porro modi dignissimos et consectetur voluptatum 
+                commodi natus. Aliquid debitis blanditiis aspernatur, sequi accusamus id?
+            </p>
+        </div>
+        <div class="images">
+            <div class="card hidden" style="width: 16rem;">
+                <img src="images/4.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fuga, error aperiam aliquid a omnis. Similique modi earum qui laudantium, porro ea ad neque hic.</p>
+                </div>
+                <a href="about.html" class="btn">Learn More</a>
+            </div>
+            <div class="card hidden" style="width: 16rem;">
+                <img src="images/2.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iure, quibusdam sed possimus provident maiores autem vel, ex similique .</p>
+                </div>
+                <a href="about.html" class="btn">Learn More</a>
+            </div>
+            <div class="card hidden" style="width: 16rem;">
+                <img src="images/3.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <p class="card-text"> Laser eye surgery, or laser vision correction, involves using lasers to reshape the front surface of your eyes so that you can focus better</p>
+                </div>
+                <a href="about.html" class="btn">Learn More</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- End About -->
+
+<!-- Start Team -->
+<div class="team">
+    <div class="container">
+        <div class="image hidden">
+            <img src="images/doctor.jpg" alt="">
+        </div>
+        <div class="info hidden">
+            <h1>Meet Our Doctors</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dicta optio ut? 
+                Magnam iure ratione laudantium debitis doloremque quisquam dolor.
+            </p>
+            <a href="team.html" class="team">Read More</a>
+        </div>
+    </div>
+</div>
+<!-- End Team -->
+<!-- Start Testimonials -->
+<div class="testi">
+    <div class="slide-container swiper hidden">
+        <h2>What Our Visitors Say</h2>
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="card-content">
+                        <h2 class="name">David Dell</h2>
+                        <p class="description">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque sit ex nisi quibusdam officia facilis?"</p>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="card-content">
+                        <h2 class="name">David Dell</h2>
+                        <p class="description">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque sit ex nisi quibusdam officia facilis?"</p>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="card-content">
+                        <h2 class="name">David Dell</h2>
+                        <p class="description">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque sit ex nisi quibusdam officia facilis?"</p>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="card-content">
+                        <h2 class="name">David Dell</h2>
+                        <p class="description">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque sit ex nisi quibusdam officia facilis?"</p>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="card-content">
+                        <h2 class="name">David Dell</h2>
+                        <p class="description">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque sit ex nisi quibusdam officia facilis?"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        <div class="swiper-button-next swiper-btn"></div>
+        <div class="swiper-button-prev swiper-btn"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+  
+  
+  </div>
+  <!-- End Testimonials -->
+
+<!-- Start Gallery -->
+<div class="gallery">
+    <div class="swiper-container mySwiper hidden">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <img src="images/g1.jpg" />
+          </div>
+          <div class="swiper-slide slide">
+            <img src="images/g2.jpg" />
+          </div>
+          <div class="swiper-slide slide">
+            <img src="images/g3.jpg" />
+          </div>
+          <div class="swiper-slide slide">
+            <img src="images/g4.jpg" />
+          </div>
+          <div class="swiper-slide slide">
+            <img src="images/g5.jpg" />
+          </div>
+          <div class="swiper-slide slide">
+            <img src="images/g6.jpg" />
+          </div>
+          <div class="swiper-slide slide">
+            <img src="images/g7.jpg" />
+          </div>
+        </div>
+      </div>
+</div>
+<!-- End Gallery -->
+
+<!-- Start Footer -->
+<div class="footer">
+    <div class="container">
+        <div class="box hidden">
+            <h3>Baby Care</h3>
+            <ul class="social">
+                <li>
+                    <a href="#" class="facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>                     
+                </li>
+                <li>
+                    <a href="#" class="twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>                       
+                </li>
+                <li>
+                    <a href="#" class="youtube">
+                        <i class="fab fa-youtube"></i>
+                    </a>                      
+                </li>
+            </ul>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="box hidden">
+            <div class="line">
+                <i class="fas fa-map-marker-alt fa-fw"></i>
+                <div class="info">Florida, USA</div>
+            </div>
+            <div class="line">
+                <i class="fas fa-clock fa-fw"></i>
+                <div class="info">Business Hours: From 10:00 To 18:00</div>
+            </div>
+            <div class="line">
+                <i class="fas fa-phone-volume fa-fw"></i>
+                <div class="info">
+                    <span>0123456789</span>
+                    <span>0112345678</span>
+                </div>
+            </div>
+        </div>
+        <div class="box hidden">
+            <ul class="links">
+                <li><i class="fas fa-angle-double-right"></i><a href="#">Important Link 1</a></li>
+                <li><i class="fas fa-angle-double-right"></i><a href="#">Important Link 2</a></li>
+                <li><i class="fas fa-angle-double-right"></i><a href="#">Important Link 3</a></li>
+            </ul>
+        </div>
+    </div>
+    <p class="copyright hidden">&copy; 2023 Baby Care All Rights Reserved</p>
+  </div>
+<!-- End Footer -->
+
+
+<a href="javascript:void(0);" id="backToTop" class="back-to-top">
+</a>
+
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="js/jquery-3.6.4.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/main.js"></script>
+<script>
+    let container = document.querySelector('.landing .container');
+    for (var i=0; i<=80; i++) {
+        let blocks = document.createElement('div');
+        blocks.classList.add('block');
+        container.appendChild(blocks);
+    }
+
+    /*function circle() {
+        let circleBtn = document.querySelector('.circleBtn');
+        container.classList.toggle('circle');
+    }*/
+
+    function generate() {
+        anime({
+            targets: '.block',
+            translateX: function() {
+                return anime.random(-700, 700);
+            },
+            translateY: function() {
+                return anime.random(-500, 500);
+            },
+            scale : function() {
+                return anime.random(1,5);
+            }
+        })
+    }
+    generate();
+
+
+    var swiper = new Swiper(".slide-content", {
+        slidesPerView: 3,
+        spaceBetween: 25,
+        loop: false,
+        centerSlide: 'true',
+        fade: 'true',
+        grabCursor: 'true',
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            520: {
+                slidesPerView: 2,
+            },
+            950: {
+                slidesPerView: 3,
+            },
+    
+        },
+    });
+
+
+    var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        loop: true,
+        autoplay: {
+            delay: 1000,
+        },
+        coverflowEffect: {
+          rotate: 43,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+      });
+
+</script>
+</html>
